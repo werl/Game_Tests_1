@@ -19,6 +19,9 @@ add_subdirectory(libs/spdlog)
 # Find Boost
 find_package(Boost 1.66 REQUIRED COMPONENTS system container)
 
+# Find GLM
+add_subdirectory(libs/glm)
+
 add_executable(Basic_Tests main.cpp)
 
 target_link_libraries(Basic_Tests PUBLIC stdc++fs)
