@@ -22,7 +22,7 @@ find_package(Boost 1.66 REQUIRED COMPONENTS system container)
 # Find GLM
 include_directories(libs/glm)
 
-add_executable(Basic_Tests main.cpp)
+add_executable(Basic_Tests src/main.cpp)
 
 target_link_libraries(Basic_Tests PUBLIC Vulkan::Vulkan)
 target_link_libraries(Basic_Tests PUBLIC glfw)

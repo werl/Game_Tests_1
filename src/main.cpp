@@ -27,7 +27,7 @@ public:
 
 private:
     void preInit() {
-        
+
     }
 
     void initVulkan() {
