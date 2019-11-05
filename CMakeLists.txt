@@ -20,11 +20,10 @@ add_subdirectory(libs/spdlog)
 find_package(Boost 1.66 REQUIRED COMPONENTS system container)
 
 # Find GLM
-add_subdirectory(libs/glm)
+include_directories(libs/glm)
 
 add_executable(Basic_Tests main.cpp)
 
-target_link_libraries(Basic_Tests PUBLIC stdc++fs)
 target_link_libraries(Basic_Tests PUBLIC Vulkan::Vulkan)
 target_link_libraries(Basic_Tests PUBLIC glfw)
 target_link_libraries(Basic_Tests PRIVATE spdlog::spdlog)
